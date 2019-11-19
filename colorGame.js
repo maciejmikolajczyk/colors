@@ -44,8 +44,8 @@ function setupModeButtons() {
 
 function setupSquares() {
 	for (var i = 0; i < squares.length; i++) {
-		squares[i].style.backgroundColor = colors[i]; //dodawanie kolorów do kwadratów
-		squares[i].addEventListener("click", function () { //dodanie reakcji na klikniecie do kwadratów
+		squares[i].style.backgroundColor = colors[i];
+		squares[i].addEventListener("click", function () { 
 			var clickedColor = this.style.backgroundColor;
 			if (clickedColor === pickedColor) {
 				message.textContent = "CORRECT";
